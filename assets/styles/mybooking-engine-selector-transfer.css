@@ -1,0 +1,92 @@
+/* Transfers selector */
+
+.mybooking-selector_vertical.mybooking-selector {
+  max-width: 460px;
+} @media ( max-width: 991px ) {
+  .mybooking-selector_vertical.mybooking-selector {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.mybooking-selector_vertical .mybooking-selector_transfers-group,
+.mybooking-selector_transfers-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem!important;
+  justify-content: flex-start;
+} @media ( min-width: 769px ) {
+  .mybooking-selector_transfers-group {
+    flex-direction: row;
+  }
+}
+
+.mybooking-selector_vertical .mybooking-selector_transfers-destination,
+.mybooking-selector_transfers-destination {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+} @media ( min-width: 575.98px ) {
+  .mybooking-selector_transfers-destination {
+    flex-direction: row;
+  }
+}
+
+.mybooking-selector_vertical .mybooking-selector_transfers-return,
+.mybooking-selector_transfers-return {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  flex-grow:  1;
+} @media ( min-width: 575.98px ) {
+  .mybooking-selector_transfers-return {
+    flex-direction: row;
+  }
+}
+
+.mybooking-selector_transfers-return  .mybooking-selector_return,
+.mybooking-selector_transfers-group .mybooking-selector_return {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.mybooking-selector_transfers-return  .mybooking-selector_cal,
+.mybooking-selector_transfers-group .mybooking-selector_cal {
+  width: 50%;
+}
+
+/** Return => Date **/
+#return_block.mybooking-selector_date,
+.mybooking-selector_transfers-destination + .mybooking-selector_date {
+  width:  auto;
+}
+
+.mybooking-selector_vertical .mybooking-selector_seats,
+.mybooking-selector_seats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+} @media ( min-width: 575.98px ) {
+  .mybooking-selector_seats {
+    margin-bottom: 0;
+  }
+}
+
+.mybooking-selector_seats-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px!important;
+  width: 100%;
+}
+
+.mybooking-selector_seats-item input[type="number"] {
+  max-width: 100%;
+}
